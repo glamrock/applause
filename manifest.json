@@ -1,0 +1,22 @@
+{
+  "name": "Applause",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Encore!",
+  "background": { "scripts": ["encore.js", "start.js"]},
+  "icons": {
+    "24" : "images/24.png",
+    "48" : "images/48.png",
+    "128" : "images/128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/48.png",
+    "default_title": "Applause",
+    "default_popup": "encore.html"
+  },
+   "incognito": "split",
+  "permissions": [
+    "background",
+    "cookies" ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
